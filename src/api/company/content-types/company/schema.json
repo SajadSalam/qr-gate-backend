@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "loading": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "address": {
+      "displayName": "address",
+      "type": "component",
+      "repeatable": false,
+      "component": "company.address"
+    },
+    "carousel": {
+      "displayName": "carousel",
+      "type": "component",
+      "repeatable": true,
+      "component": "company.carousel"
+    },
+    "carouselTitle": {
+      "type": "string"
+    },
+    "social": {
+      "displayName": "soical",
+      "type": "component",
+      "repeatable": true,
+      "component": "company.soical"
+    },
+    "urls": {
+      "displayName": "urls",
+      "type": "component",
+      "repeatable": true,
+      "component": "company.urls"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
